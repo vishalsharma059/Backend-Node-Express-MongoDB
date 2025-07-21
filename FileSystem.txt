@@ -1,0 +1,43 @@
+const fs = require('fs');
+const http = require('http');
+
+// writeFile, copyFile, rename, appendFile, unlink
+
+// fs.writeFile("hey.txt", "hey, hello how are you?", function (err) {
+//     if (err) {
+//         console.log("Error writing file:", err);
+//     } else {
+//         console.log("File written successfully");
+//     }
+// })
+
+// fs.appendFile("hey.txt", " I am good!", function (err) {
+//     if (err) {
+//         console.log("Error writing file:", err);
+//     } else {
+//         console.log("File written successfully");
+//     }
+// })
+
+// fs.rename("hey.txt", "new.txt", function (err) {
+//     if (err) {
+//         console.log("Error renaming file:", err);
+//     } else {
+//         console.log("File renamed successfully");
+//     }
+// })
+
+// fs.copyFile("new.txt", "./copy/copy.txt", function (err) {
+//     if (err) {
+//         console.log("Error copying file:", err.message);
+//     } else {
+//         console.log("File copied successfully");
+//     }
+// })
+
+const server = http.createServer((req, res) => { 
+    res.end("Hello, World!!");
+})
+
+server.listen(3001);
+

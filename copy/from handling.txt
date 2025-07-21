@@ -1,0 +1,8 @@
+how to handle backend process of forms and making sure data coming from any frontend lib, fw, templating engines, we still handle it at the backend 
+
+okh so we have send the plain text but the server recieved the blob which us not directly readable 
+
+app.use(express.json());
+app.use(express.urlencoded({extender: true}));
+
+these both are used to read the plain text that we send with the help of form through frontend
