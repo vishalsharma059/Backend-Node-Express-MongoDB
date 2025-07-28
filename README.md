@@ -1,0 +1,1 @@
+This repository contains my practice code and mini projects built while learning **Node.js**, **Express.js**, and **MongoDB**. It includes examples, experiments, and small-scale applications that helped me strengthen my backend development skills.
