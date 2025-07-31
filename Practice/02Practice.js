@@ -2,7 +2,7 @@
 
 const express = require("express");
 
-const app = express();
+// const app = express();
 
 app.use(express.json());
 
@@ -58,3 +58,47 @@ app.post("./login", async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 });
+
+const fs = require('fs');
+
+const content = "Hello Node.js";
+
+fs.writeFile('new.txt', content, 'utf8', (error) => {
+  if (error) {
+    console.log("File not write");
+    return;
+  }
+  console.log("Successfully write");
+});
+
+// By default, Node write in buffer format. If we don't secify 'utf8', it may write binary data or give unexpected results when dealing with strings.
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, {
+    'content-type': 'text/plain'
+  })
+  res.end("Hello Vishal");
+})
+
+server.listen(3000, () => {
+  console.log("Server is running");
+})
+
+const express = requie('express');
+
+const app = express();
+app.use(express.json());
+
+app.get('/api', (req, res) => {
+  return res.status(200).json({message: "Api fetch successfully"})
+})
+
+app.get('/', (req, res) => {
+  return res.status(200).json({message: "Welcome Home"})
+})
+
+app.use((req, res) => {
+  return res.status(404).json({message: "404 notfound"})
+})
