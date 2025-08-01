@@ -39,6 +39,8 @@ app.delete('/products/:id', (req, res) => {
     return res.status(200).json({ message: "Product deleted", data: products });
 });
 
+
+
 app.listen(3000, () => {
     console.log("Server is running");
 });
