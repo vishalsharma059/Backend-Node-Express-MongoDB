@@ -1,4 +1,4 @@
-function MovesNegativeToEnd(nums) {
+function MovesZerosToEnd(nums) {
     let j = 0;
 
     for (let i = j + 1; i < nums.length; i++) {
@@ -17,6 +17,6 @@ function MovesNegativeToEnd(nums) {
 
 nums = [0, 1, 0, 3, 12]
 
-let newArr = MovesNegativeToEnd(nums);
+let newArr = MovesZerosToEnd(nums);
 console.log(newArr);
 

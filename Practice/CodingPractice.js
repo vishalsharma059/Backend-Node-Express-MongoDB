@@ -70,3 +70,7 @@ const flattenArray = (arr, result = []) => {
 };
 
 console.log(flattenArray(arr, []));
+
+
+console.log(1 ?? "Vishal");
+
