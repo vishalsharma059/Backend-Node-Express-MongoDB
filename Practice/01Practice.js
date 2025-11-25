@@ -13,10 +13,9 @@
 
 // Node.js comes with the in -built modules that help in building server - side functionality without installing the external libraries
 
-// 1. fs - File system operation(ReadableByteStreamController, delete, write, etc)
+// 1. fs - File system operation(Read, delete, write, etc)
 
 
-const { log } = require('console');
 const fs = require('fs');
 
 fs.readFile('new.txt', 'utf8', (err, data) => {
