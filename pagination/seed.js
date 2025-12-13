@@ -13,7 +13,8 @@ let dummy = [];
 for (let i = 0; i < 100; i++) {
     dummy.push({
         name: `Product ${i}`,
-        price: i * 10
+        price: i * 10,
+        category: `Category ${i}`
     });
 }
 
